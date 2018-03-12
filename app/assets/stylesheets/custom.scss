@@ -1,0 +1,7 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none;    
+}
