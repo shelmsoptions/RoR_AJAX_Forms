@@ -7,9 +7,10 @@ end
 
 
 gem 'rails', '~> 5.1.5'
-gem 'sqlite3'
+gem 'pg', '>= 0.18', '< 2.0'
 
 gem 'sass-rails', '~> 5.0'
+
 gem 'bootstrap-sass', '~>3.3.3'
 gem 'jquery-rails'
 
