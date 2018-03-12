@@ -24,14 +24,15 @@
         <td><%= c.last_name %></td>
         <td><%= c.email %></td>
         <td><%= c.address %></td>
-        <td>| <%= link_to 'Delete', customer_path(c), method: :delete, data: { confirm: 'Sure?' } %></td>
+        <td><%= render @customers %></td>
       </tr>
       <% end %>
     </tbody>
   </table>
 
   <%= render 'dialog' %>
-  To see the action buttons, create a new Customer - then you can edit, delete
+  To see the action buttons, create a new Customer - then you can edit, delete <br>
+  - Also, check the custom.scss for the ghetto solution to the modal appearing behind the modal backdrop 'screen'
   <br>
   <a href="http://www.benkirane.ch/ajax-bootstrap-modals-rails/">Tutorial Source</a>
 </div>
